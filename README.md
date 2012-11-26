@@ -8,8 +8,8 @@ How to use
 
 Just install it with ``python setup.py install`` and add it to your installed apps. To use it, you have to patch your manage.py. To do this, add the following 2 lines at the top your your manage.py:
 
-``from gevent import monkey``
-``monkey.patch_all()``
+    from gevent import monkey
+    monkey.patch_all()
 
 Now you can add a mushroom.py to your apps and specify rpc_functions or scheduled_functions. To do so, use the ``rpc_function`` or the ``scheduled_function`` decorator you can import from ``django-mushroom.utils``. 
 
